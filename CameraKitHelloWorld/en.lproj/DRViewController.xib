@@ -185,6 +185,12 @@
             <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
             <point key="canvasLocation" x="285" y="-391"/>
         </view>
+        <view contentMode="scaleToFill" id="BYw-xT-6fX">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="1253" y="-391"/>
+        </view>
     </objects>
     <resources>
         <image name="down.png" width="128" height="128"/>
