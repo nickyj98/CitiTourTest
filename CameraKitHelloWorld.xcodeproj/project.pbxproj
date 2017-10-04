@@ -19,7 +19,6 @@
 		0249A9571D5C5C4800974BD2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0249A9521D5C5C4800974BD2 /* Default.png */; };
 		0249A9581D5C5C4800974BD2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0249A9531D5C5C4800974BD2 /* Default@2x.png */; };
 		0249A9591D5C5C4800974BD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0249A9541D5C5C4800974BD2 /* main.m */; };
-		3B1A02F81F79E03100390B0D /* CameraKitSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A02F61F79E03100390B0D /* CameraKitSDK.framework */; };
 		3B1A02F91F79E03100390B0D /* DoubleControlSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A02F71F79E03100390B0D /* DoubleControlSDK.framework */; };
 		F446A3E21F3D7E4D00A56682 /* notconnected.png in Resources */ = {isa = PBXBuildFile; fileRef = F446A3E11F3D7E4D00A56682 /* notconnected.png */; };
 		F446A3E41F3D845B00A56682 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F446A3E31F3D845B00A56682 /* QuartzCore.framework */; };
@@ -53,7 +52,6 @@
 		0249A9521D5C5C4800974BD2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = CameraKitHelloWorld/Default.png; sourceTree = SOURCE_ROOT; };
 		0249A9531D5C5C4800974BD2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "CameraKitHelloWorld/Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		0249A9541D5C5C4800974BD2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CameraKitHelloWorld/main.m; sourceTree = SOURCE_ROOT; };
-		3B1A02F61F79E03100390B0D /* CameraKitSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CameraKitSDK.framework; sourceTree = "<group>"; };
 		3B1A02F71F79E03100390B0D /* DoubleControlSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DoubleControlSDK.framework; sourceTree = "<group>"; };
 		3B1A02FA1F79E7E000390B0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = Info.plist; path = DoubleControlSDK.framework/Info.plist; sourceTree = "<group>"; };
 		F446A3E11F3D7E4D00A56682 /* notconnected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notconnected.png; sourceTree = SOURCE_ROOT; };
@@ -76,7 +74,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B1A02F81F79E03100390B0D /* CameraKitSDK.framework in Frameworks */,
 				3B1A02F91F79E03100390B0D /* DoubleControlSDK.framework in Frameworks */,
 				F446A3E41F3D845B00A56682 /* QuartzCore.framework in Frameworks */,
 				022C414F17AFA67700385168 /* ExternalAccessory.framework in Frameworks */,
@@ -110,7 +107,6 @@
 		022C410117AE279C00385168 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3B1A02F61F79E03100390B0D /* CameraKitSDK.framework */,
 				3B1A02F71F79E03100390B0D /* DoubleControlSDK.framework */,
 				F446A3E31F3D845B00A56682 /* QuartzCore.framework */,
 				022C414E17AFA67700385168 /* ExternalAccessory.framework */,
