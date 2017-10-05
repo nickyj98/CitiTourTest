@@ -13,13 +13,16 @@
 		022C414F17AFA67700385168 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022C414E17AFA67700385168 /* ExternalAccessory.framework */; };
 		0249A9471D5C5C0E00974BD2 /* DRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0249A9441D5C5C0E00974BD2 /* DRAppDelegate.m */; };
 		0249A9481D5C5C0E00974BD2 /* DRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0249A9461D5C5C0E00974BD2 /* DRViewController.m */; };
-		0249A94B1D5C5C2000974BD2 /* DRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0249A9491D5C5C2000974BD2 /* DRViewController.xib */; };
 		0249A94E1D5C5C2C00974BD2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0249A94C1D5C5C2C00974BD2 /* InfoPlist.strings */; };
 		0249A9561D5C5C4800974BD2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0249A9511D5C5C4800974BD2 /* Default-568h@2x.png */; };
 		0249A9571D5C5C4800974BD2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0249A9521D5C5C4800974BD2 /* Default.png */; };
 		0249A9581D5C5C4800974BD2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0249A9531D5C5C4800974BD2 /* Default@2x.png */; };
 		0249A9591D5C5C4800974BD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0249A9541D5C5C4800974BD2 /* main.m */; };
-		3B184F281F84DEC0002C5204 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B184F271F84DEC0002C5204 /* main.storyboard */; };
+		3B184F2A1F85C9CA002C5204 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B184F291F85C9CA002C5204 /* AVFoundation.framework */; };
+		3B184F2C1F85D55B002C5204 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B184F271F84DEC0002C5204 /* main.storyboard */; };
+		3B184F311F85D99B002C5204 /* double-2-telepresence-robot_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B184F2F1F85D99A002C5204 /* double-2-telepresence-robot_1.jpg */; };
+		3B184F321F85D99B002C5204 /* centre-for-it-innovation-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B184F301F85D99A002C5204 /* centre-for-it-innovation-logo.jpg */; };
+		3B184F341F85D9A2002C5204 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3B184F331F85D9A2002C5204 /* images.jpeg */; };
 		3B1A02F91F79E03100390B0D /* DoubleControlSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A02F71F79E03100390B0D /* DoubleControlSDK.framework */; };
 		F446A3E21F3D7E4D00A56682 /* notconnected.png in Resources */ = {isa = PBXBuildFile; fileRef = F446A3E11F3D7E4D00A56682 /* notconnected.png */; };
 		F446A3E41F3D845B00A56682 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F446A3E31F3D845B00A56682 /* QuartzCore.framework */; };
@@ -45,7 +48,6 @@
 		0249A9441D5C5C0E00974BD2 /* DRAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRAppDelegate.m; path = CameraKitHelloWorld/DRAppDelegate.m; sourceTree = SOURCE_ROOT; };
 		0249A9451D5C5C0E00974BD2 /* DRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DRViewController.h; path = CameraKitHelloWorld/DRViewController.h; sourceTree = SOURCE_ROOT; };
 		0249A9461D5C5C0E00974BD2 /* DRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DRViewController.m; path = CameraKitHelloWorld/DRViewController.m; sourceTree = SOURCE_ROOT; };
-		0249A94A1D5C5C2000974BD2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = CameraKitHelloWorld/en.lproj/DRViewController.xib; sourceTree = SOURCE_ROOT; };
 		0249A94D1D5C5C2C00974BD2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = CameraKitHelloWorld/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		0249A94F1D5C5C4800974BD2 /* CameraKitHelloWorld-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "CameraKitHelloWorld-Info.plist"; path = "CameraKitHelloWorld/CameraKitHelloWorld-Info.plist"; sourceTree = SOURCE_ROOT; };
 		0249A9501D5C5C4800974BD2 /* CameraKitHelloWorld-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CameraKitHelloWorld-Prefix.pch"; path = "CameraKitHelloWorld/CameraKitHelloWorld-Prefix.pch"; sourceTree = SOURCE_ROOT; };
@@ -54,6 +56,11 @@
 		0249A9531D5C5C4800974BD2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "CameraKitHelloWorld/Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		0249A9541D5C5C4800974BD2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CameraKitHelloWorld/main.m; sourceTree = SOURCE_ROOT; };
 		3B184F271F84DEC0002C5204 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		3B184F291F85C9CA002C5204 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3B184F2B1F85D4AC002C5204 /* DRViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DRViewController.xib; path = ../../../../../.Trash/DRViewController.xib; sourceTree = "<group>"; };
+		3B184F2F1F85D99A002C5204 /* double-2-telepresence-robot_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "double-2-telepresence-robot_1.jpg"; sourceTree = SOURCE_ROOT; };
+		3B184F301F85D99A002C5204 /* centre-for-it-innovation-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "centre-for-it-innovation-logo.jpg"; sourceTree = SOURCE_ROOT; };
+		3B184F331F85D9A2002C5204 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = SOURCE_ROOT; };
 		3B1A02F71F79E03100390B0D /* DoubleControlSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DoubleControlSDK.framework; sourceTree = "<group>"; };
 		3B1A02FA1F79E7E000390B0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = Info.plist; path = DoubleControlSDK.framework/Info.plist; sourceTree = "<group>"; };
 		F446A3E11F3D7E4D00A56682 /* notconnected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notconnected.png; sourceTree = SOURCE_ROOT; };
@@ -76,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B184F2A1F85C9CA002C5204 /* AVFoundation.framework in Frameworks */,
 				3B1A02F91F79E03100390B0D /* DoubleControlSDK.framework in Frameworks */,
 				F446A3E41F3D845B00A56682 /* QuartzCore.framework in Frameworks */,
 				022C414F17AFA67700385168 /* ExternalAccessory.framework in Frameworks */,
@@ -109,6 +117,7 @@
 		022C410117AE279C00385168 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B184F291F85C9CA002C5204 /* AVFoundation.framework */,
 				3B1A02F71F79E03100390B0D /* DoubleControlSDK.framework */,
 				F446A3E31F3D845B00A56682 /* QuartzCore.framework */,
 				022C414E17AFA67700385168 /* ExternalAccessory.framework */,
@@ -127,9 +136,9 @@
 				0249A9441D5C5C0E00974BD2 /* DRAppDelegate.m */,
 				0249A9451D5C5C0E00974BD2 /* DRViewController.h */,
 				0249A9461D5C5C0E00974BD2 /* DRViewController.m */,
-				0249A9491D5C5C2000974BD2 /* DRViewController.xib */,
 				F4703BAD1F41645F00A64D49 /* UIPopover+iPhone.h */,
 				F4703BAE1F41645F00A64D49 /* UIPopover+iPhone.m */,
+				3B184F2B1F85D4AC002C5204 /* DRViewController.xib */,
 				022C410917AE279C00385168 /* Supporting Files */,
 			);
 			name = CameraKitHelloWorld;
@@ -139,6 +148,9 @@
 		022C410917AE279C00385168 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3B184F331F85D9A2002C5204 /* images.jpeg */,
+				3B184F301F85D99A002C5204 /* centre-for-it-innovation-logo.jpg */,
+				3B184F2F1F85D99A002C5204 /* double-2-telepresence-robot_1.jpg */,
 				F446A3E11F3D7E4D00A56682 /* notconnected.png */,
 				F48086661F398DC700CAE162 /* hamster.jpg */,
 				F48086641F397EAC00CAE162 /* camera.png */,
@@ -218,21 +230,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B184F2C1F85D55B002C5204 /* main.storyboard in Resources */,
 				F4C4E8FD1F04D47100BD82D5 /* up.png in Resources */,
 				0249A9581D5C5C4800974BD2 /* Default@2x.png in Resources */,
 				F446A3E21F3D7E4D00A56682 /* notconnected.png in Resources */,
 				F4C4E8FF1F04D47700BD82D5 /* right.png in Resources */,
 				F4C4E8F71F04D12900BD82D5 /* 184028-200.png in Resources */,
 				F4C4E8FB1F04D46400BD82D5 /* down.png in Resources */,
-				0249A94B1D5C5C2000974BD2 /* DRViewController.xib in Resources */,
 				F48086651F397EAC00CAE162 /* camera.png in Resources */,
 				F4D504E11EFBC8FD0008483D /* weather.gif in Resources */,
 				0249A9561D5C5C4800974BD2 /* Default-568h@2x.png in Resources */,
 				0249A94E1D5C5C2C00974BD2 /* InfoPlist.strings in Resources */,
-				3B184F281F84DEC0002C5204 /* main.storyboard in Resources */,
+				3B184F341F85D9A2002C5204 /* images.jpeg in Resources */,
+				3B184F311F85D99B002C5204 /* double-2-telepresence-robot_1.jpg in Resources */,
 				F48086671F398DC700CAE162 /* hamster.jpg in Resources */,
 				F4C4E8F91F04D18700BD82D5 /* icon-ios7-circle-outline-128.png in Resources */,
 				0249A9571D5C5C4800974BD2 /* Default.png in Resources */,
+				3B184F321F85D99B002C5204 /* centre-for-it-innovation-logo.jpg in Resources */,
 				F4C4E9011F04D47B00BD82D5 /* lefy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,14 +268,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0249A9491D5C5C2000974BD2 /* DRViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0249A94A1D5C5C2000974BD2 /* en */,
-			);
-			name = DRViewController.xib;
-			sourceTree = "<group>";
-		};
 		0249A94C1D5C5C2C00974BD2 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

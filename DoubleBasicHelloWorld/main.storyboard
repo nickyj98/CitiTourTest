@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CP7-Tn-nC8">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,14 +14,127 @@
             <objects>
                 <viewController id="Fc3-a2-rSu" customClass="DRViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="FUJ-eB-Vc0"/>
-                        <viewControllerLayoutGuide type="bottom" id="DDD-2I-Xre"/>
+                        <viewControllerLayoutGuide type="top" id="Ec9-4D-DlB"/>
+                        <viewControllerLayoutGuide type="bottom" id="X2q-dW-lE5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="n1I-zr-jk7">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tt7-hZ-Y2N">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAX-0C-l92">
+                                        <rect key="frame" x="122" y="20" width="131" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Welcome Message"/>
+                                        <connections>
+                                            <action selector="Welcome:" destination="Fc3-a2-rSu" eventType="touchUpInside" id="sRo-jR-ROo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyN-Im-euQ">
+                                        <rect key="frame" x="261" y="20" width="90" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="First Exhibit"/>
+                                        <connections>
+                                            <action selector="First:" destination="Fc3-a2-rSu" eventType="touchUpInside" id="LVF-rJ-obG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSZ-Ui-ZAC">
+                                        <rect key="frame" x="253" y="73" width="98" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Fourth Exhibit"/>
+                                        <connections>
+                                            <action selector="Fourth:" destination="Fc3-a2-rSu" eventType="touchUpInside" id="q6H-OF-nNh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEo-ja-B36">
+                                        <rect key="frame" x="375" y="73" width="90" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Fifth Exhibit"/>
+                                        <connections>
+                                            <action selector="Fifth:" destination="Fc3-a2-rSu" eventType="touchUpInside" id="d3Z-c5-oiW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAh-Jj-5hT">
+                                        <rect key="frame" x="481" y="73" width="90" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Sixth Exhibit"/>
+                                        <connections>
+                                            <action selector="Sixth:" destination="Fc3-a2-rSu" eventType="touchUpInside" id="Klw-uJ-4rK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNh-fF-Ff4">
+                                        <rect key="frame" x="359" y="20" width="123" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Second Exhibit"/>
+                                        <connections>
+                                            <action selector="Second:" destination="Fc3-a2-rSu" eventType="touchUpInside" id="VLE-7w-YpA"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UCR-QU-hS0">
+                                        <rect key="frame" x="20" y="111" width="728" height="400"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxj-1b-vfk">
+                                        <rect key="frame" x="8" y="20" width="106" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Full Tour"/>
+                                        <connections>
+                                            <action selector="FullTour:" destination="Fc3-a2-rSu" eventType="touchUpInside" id="DQ1-ow-m0c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mo-4J-3mN">
+                                        <rect key="frame" x="8" y="58" width="106" height="61"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Return to base"/>
+                                        <connections>
+                                            <action selector="R2B:" destination="Fc3-a2-rSu" eventType="touchUpInside" id="Lep-1T-wAs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5BV-90-Znb">
+                                        <rect key="frame" x="481" y="20" width="90" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Third Exhibit"/>
+                                        <connections>
+                                            <action selector="Third:" destination="Fc3-a2-rSu" eventType="touchUpInside" id="KcW-kK-YWy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdx-8n-2wM">
+                                        <rect key="frame" x="629" y="73" width="119" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Ending Message"/>
+                                        <connections>
+                                            <action selector="Ending:" destination="Fc3-a2-rSu" eventType="touchUpInside" id="cpl-5O-dBd"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="65c-2l-8ut">
+                                        <rect key="frame" x="20" y="531" width="728" height="269"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ith-Ii-87d">
+                                        <rect key="frame" x="587" y="953" width="124" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Manual Controls"/>
+                                        <connections>
+                                            <segue destination="CP7-Tn-nC8" kind="presentation" id="mO5-1f-nPs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="Image" destination="UCR-QU-hS0" id="G5m-hb-Vkh"/>
+                        <outlet property="Readingtext" destination="65c-2l-8ut" id="prt-kH-CTc"/>
+                        <outlet property="image" destination="UCR-QU-hS0" id="hWN-NM-pBx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6yW-c1-RVG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -32,15 +145,15 @@
             <objects>
                 <viewController id="CP7-Tn-nC8" customClass="DRViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wzI-ZV-GIF"/>
-                        <viewControllerLayoutGuide type="bottom" id="D2a-J5-hSj"/>
+                        <viewControllerLayoutGuide type="top" id="bGj-wK-6Wz"/>
+                        <viewControllerLayoutGuide type="bottom" id="sxy-Yf-wek"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bVd-q8-vAV">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4HC-It-oXc">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <rect key="frame" x="-2" y="0.0" width="768" height="1021"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sp8-9I-zCl">

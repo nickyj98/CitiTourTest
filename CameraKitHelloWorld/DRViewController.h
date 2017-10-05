@@ -35,15 +35,29 @@
     IBOutlet UIButton *driveBackwardButton;
     
     
-    
+    IBOutlet UIImageView *image;
     
 }
 
+@property (weak, nonatomic) IBOutlet UILabel *Readtext;
+@property (weak, nonatomic) IBOutlet UIImageView *Image;
+@property (weak, nonatomic) IBOutlet UITextView *Readingtext;
 
-- (IBAction)DriveBackwards:(id)sender;
-- (IBAction)DriveLeft:(id)sender;
-- (IBAction)DriveRight:(id)sender;
 
+
+//tour mode
+- (IBAction)FullTour:(id)sender;
+- (IBAction)R2B:(id)sender;
+
+
+- (IBAction)Welcome:(id)sender;
+- (IBAction)First:(id)sender;
+- (IBAction)Second:(id)sender;
+- (IBAction)Third:(id)sender;
+- (IBAction)Fourth:(id)sender;
+- (IBAction)Fifth:(id)sender;
+- (IBAction)Sixth:(id)sender;
+- (IBAction)Ending:(id)sender;
 
 @end
 
