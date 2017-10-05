@@ -134,23 +134,28 @@ int timeTicker;
 
 
 - (IBAction)kickstandRetract:(id)sender {
+    NSLog(@"Deploy");
     [[DRDouble sharedDouble] retractKickstands];
 }
 
 - (IBAction)kickstandDeploy:(id)sender {
+    NSLog(@"park");
     [[DRDouble sharedDouble] deployKickstands];
 }
 
 - (IBAction)poleUp:(id)sender {
+    NSLog(@"poleUp");
     [[DRDouble sharedDouble] poleUp];
 }
 
 
 - (IBAction)poleStop:(id)sender {
+    NSLog(@"poleStop");
     [[DRDouble sharedDouble] poleStop];
 }
 
 - (IBAction)poleDown:(id)sender {
+    NSLog(@"poleDown");
     [[DRDouble sharedDouble] poleDown];
 }
 
@@ -161,13 +166,13 @@ int timeTicker;
 #pragma mark - DRDoubleDelegate
 - (void)doubleDidConnect:(DRDouble *)theDouble{
     NSLog(@"DoubleDidConnect");
-    statusLabel.text = @"Connected";
+    connectionStatusLabel.text = @"Connected";
     
 }
 
 -(void)doubleDidDisconnect:(DRDouble *)theDouble{
     NSLog(@"DoubleDidDisconnect");
-    statusLabel.text = @"Not Connected";
+    connectionStatusLabel.text = @"Not Connected";
 }
 
 -(void)doubleStatusDidUpdate:(DRDouble *)theDouble{
