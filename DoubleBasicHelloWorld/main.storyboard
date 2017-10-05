@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="Y1h-so-7Yt">
             <objects>
-                <viewController id="Fc3-a2-rSu" sceneMemberID="viewController">
+                <viewController id="Fc3-a2-rSu" customClass="DRViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FUJ-eB-Vc0"/>
                         <viewControllerLayoutGuide type="bottom" id="DDD-2I-Xre"/>
@@ -30,7 +30,7 @@
         <!--View Controller-->
         <scene sceneID="mmP-m4-oxN">
             <objects>
-                <viewController id="CP7-Tn-nC8" sceneMemberID="viewController">
+                <viewController id="CP7-Tn-nC8" customClass="DRViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wzI-ZV-GIF"/>
                         <viewControllerLayoutGuide type="bottom" id="D2a-J5-hSj"/>
@@ -74,6 +74,9 @@
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <state key="normal" title="Park"/>
+                                        <connections>
+                                            <action selector="kickstandDeploy:" destination="CP7-Tn-nC8" eventType="touchUpInside" id="IFD-db-A2T"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0AQ-f9-1E0">
                                         <rect key="frame" x="5" y="70" width="436" height="183"/>
@@ -142,6 +145,9 @@
                                                 <state key="normal" title="Increase">
                                                     <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="poleUp:" destination="CP7-Tn-nC8" eventType="touchUpInside" id="9Ne-05-vZb"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bq7-WU-GpW">
                                                 <rect key="frame" x="256" y="133" width="80" height="30"/>
@@ -150,6 +156,9 @@
                                                 <state key="normal" title="Stop">
                                                     <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="poleStop:" destination="CP7-Tn-nC8" eventType="touchUpInside" id="MtF-te-7tH"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxE-8I-phT">
                                                 <rect key="frame" x="344" y="133" width="80" height="30"/>
@@ -158,6 +167,9 @@
                                                 <state key="normal" title="Decrease">
                                                     <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="poleDown:" destination="CP7-Tn-nC8" eventType="touchUpInside" id="DeT-cE-rzq"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pole Height :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFQ-TZ-HXG">
                                                 <rect key="frame" x="13" y="138" width="115" height="21"/>
@@ -176,6 +188,9 @@
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <state key="normal" title="Deploy"/>
+                                        <connections>
+                                            <action selector="kickstandRetract:" destination="CP7-Tn-nC8" eventType="touchDragInside" id="ooC-Kn-ZAe"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ga5-Ij-tbe">
                                         <rect key="frame" x="8" y="28" width="123" height="30"/>
@@ -191,6 +206,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="DriveFrontButton" destination="sp8-9I-zCl" id="SVs-ab-kLA"/>
+                        <outlet property="PlayStatusLabel" destination="D30-OD-CWj" id="wAp-jz-h1F"/>
+                        <outlet property="batteryPercentLabel" destination="MSs-3R-si1" id="Jw1-rr-2Ry"/>
+                        <outlet property="connectionStatusLabel" destination="tbQ-0w-zCh" id="9Hn-cX-hJj"/>
+                        <outlet property="driveBackwardButton" destination="VJh-gb-AGj" id="gsF-dS-2i9"/>
+                        <outlet property="driveLeftButton" destination="OWx-5s-dK7" id="Rnn-Zd-vYE"/>
+                        <outlet property="driveRightButton" destination="dmA-rk-P7Z" id="e0w-yk-Bw4"/>
+                        <outlet property="kickstandStateLabel" destination="6xI-gy-Yav" id="JDF-HD-UKl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YcD-Im-J0S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
