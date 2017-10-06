@@ -21,8 +21,10 @@
 	self.viewController = [[DRViewController alloc] initWithNibName:@"DRViewController" bundle:nil];
 	self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
-    return YES;
      */
+    return YES;
+     
+     
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

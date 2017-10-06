@@ -34,6 +34,8 @@
     IBOutlet UIButton *driveRightButton;
     IBOutlet UIButton *driveBackwardButton;
     
+    IBOutlet UIButton *parking;
+    IBOutlet UIButton *deploying;
     
     IBOutlet UIImageView *image;
     
@@ -44,6 +46,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *Readingtext;
 
 
+@property (weak, nonatomic) IBOutlet UIButton *manualcontrols;
 
 //tour mode
 - (IBAction)FullTour:(id)sender;

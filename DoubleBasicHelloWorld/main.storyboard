@@ -117,9 +117,9 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ith-Ii-87d">
-                                        <rect key="frame" x="587" y="953" width="124" height="30"/>
+                                        <rect key="frame" x="568" y="953" width="143" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Manual Controls"/>
+                                        <state key="normal" title="Manual Controls &gt;"/>
                                         <connections>
                                             <segue destination="CP7-Tn-nC8" kind="presentation" id="mO5-1f-nPs"/>
                                         </connections>
@@ -134,11 +134,12 @@
                         <outlet property="Image" destination="UCR-QU-hS0" id="G5m-hb-Vkh"/>
                         <outlet property="Readingtext" destination="65c-2l-8ut" id="prt-kH-CTc"/>
                         <outlet property="image" destination="UCR-QU-hS0" id="hWN-NM-pBx"/>
+                        <outlet property="manualcontrols" destination="Ith-Ii-87d" id="60R-6c-FNx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6yW-c1-RVG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-277" y="-554"/>
+            <point key="canvasLocation" x="-277.34375" y="-554.296875"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mmP-m4-oxN">

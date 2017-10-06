@@ -143,6 +143,7 @@ int timeTicker;
     [[DRDouble sharedDouble] deployKickstands];
 }
 
+
 - (IBAction)poleUp:(id)sender {
     NSLog(@"poleUp");
     [[DRDouble sharedDouble] poleUp];
@@ -212,6 +213,33 @@ int timeTicker;
         float turn = (driveRightButton.highlighted) ? 1.0 : ((driveLeftButton.highlighted) ? 	-1.0 : 0.0);
         NSLog(@"Turn : %f", turn);
         [theDouble drive:drive turn:turn];
+    
+    if(_manualcontrols.highlighted == true){
+        
+            poleHeightPercentLabel.text = [NSString stringWithFormat:@"%.02f", [DRDouble sharedDouble].poleHeightPercent];
+            //kickstandStateLabel.text = [NSString stringWithFormat:@"%d", [DRDouble sharedDouble].kickstandState];
+            if([DRDouble sharedDouble].kickstandState == 1)
+            {
+                kickstandStateLabel.text = @"Parked";
+            }
+            else if([DRDouble sharedDouble].kickstandState == 2)
+            {
+                kickstandStateLabel.text = @"Deployed";
+            }
+            else if([DRDouble sharedDouble].kickstandState == 3)
+            {
+                kickstandStateLabel.text = @"Parking";
+            }
+            else if([DRDouble sharedDouble].kickstandState == 4)
+            {
+                kickstandStateLabel.text = @"Unparking";
+            }
+            
+            batteryPercentLabel.text = [NSString stringWithFormat:@"%.2f", [DRDouble sharedDouble].batteryPercent];
+        
+        
+    }
+    
     }
     
 
@@ -439,5 +467,6 @@ willSpeakRangeOfSpeechString:(NSRange)characterRange
 }
 
    
-    @end
+
+@end
     
