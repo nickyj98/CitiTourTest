@@ -34,8 +34,6 @@
     IBOutlet UIButton *driveRightButton;
     IBOutlet UIButton *driveBackwardButton;
     
-    IBOutlet UIButton *parking;
-    IBOutlet UIButton *deploying;
     
     IBOutlet UIImageView *image;
     
