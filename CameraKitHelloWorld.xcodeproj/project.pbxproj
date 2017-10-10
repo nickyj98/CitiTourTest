@@ -39,7 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		022C40FF17AE279C00385168 /* CameraKitHelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraKitHelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		022C40FF17AE279C00385168 /* CITI Tour .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CITI Tour .app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		022C410217AE279C00385168 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		022C410417AE279C00385168 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		022C410617AE279C00385168 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -109,7 +109,7 @@
 		022C410017AE279C00385168 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				022C40FF17AE279C00385168 /* CameraKitHelloWorld.app */,
+				022C40FF17AE279C00385168 /* CITI Tour .app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,7 +189,7 @@
 			);
 			name = CameraKitHelloWorld;
 			productName = DoubleBasicHelloWorld;
-			productReference = 022C40FF17AE279C00385168 /* CameraKitHelloWorld.app */;
+			productReference = 022C40FF17AE279C00385168 /* CITI Tour .app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -377,7 +377,7 @@
 				INFOPLIST_FILE = "CameraKitHelloWorld/CameraKitHelloWorld-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "CameraWorld-243";
-				PRODUCT_NAME = CameraKitHelloWorld;
+				PRODUCT_NAME = "CITI Tour ";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -400,7 +400,7 @@
 				INFOPLIST_FILE = "CameraKitHelloWorld/CameraKitHelloWorld-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "CameraWorld-243";
-				PRODUCT_NAME = CameraKitHelloWorld;
+				PRODUCT_NAME = "CITI Tour ";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
