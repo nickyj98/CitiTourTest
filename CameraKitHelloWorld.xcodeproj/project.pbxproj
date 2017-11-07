@@ -55,9 +55,8 @@
 		0249A9521D5C5C4800974BD2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = CameraKitHelloWorld/Default.png; sourceTree = SOURCE_ROOT; };
 		0249A9531D5C5C4800974BD2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "CameraKitHelloWorld/Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		0249A9541D5C5C4800974BD2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CameraKitHelloWorld/main.m; sourceTree = SOURCE_ROOT; };
-		3B184F271F84DEC0002C5204 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		3B184F271F84DEC0002C5204 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = main.storyboard; path = "/Users/rts/Desktop/CITITour/Video Recording(final P1) copy-2/Video Recording/CameraKitHelloWorld/main.storyboard"; sourceTree = "<absolute>"; };
 		3B184F291F85C9CA002C5204 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		3B184F2B1F85D4AC002C5204 /* DRViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DRViewController.xib; path = ../../../../../.Trash/DRViewController.xib; sourceTree = "<group>"; };
 		3B184F2F1F85D99A002C5204 /* double-2-telepresence-robot_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "double-2-telepresence-robot_1.jpg"; sourceTree = SOURCE_ROOT; };
 		3B184F301F85D99A002C5204 /* centre-for-it-innovation-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "centre-for-it-innovation-logo.jpg"; sourceTree = SOURCE_ROOT; };
 		3B184F331F85D9A2002C5204 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = SOURCE_ROOT; };
@@ -138,7 +137,6 @@
 				0249A9461D5C5C0E00974BD2 /* DRViewController.m */,
 				F4703BAD1F41645F00A64D49 /* UIPopover+iPhone.h */,
 				F4703BAE1F41645F00A64D49 /* UIPopover+iPhone.m */,
-				3B184F2B1F85D4AC002C5204 /* DRViewController.xib */,
 				022C410917AE279C00385168 /* Supporting Files */,
 			);
 			name = CameraKitHelloWorld;

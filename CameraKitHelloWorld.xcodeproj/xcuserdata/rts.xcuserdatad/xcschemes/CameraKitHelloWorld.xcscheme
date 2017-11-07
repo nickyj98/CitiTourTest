@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "022C40FE17AE279C00385168"
-               BuildableName = "CameraKitHelloWorld.app"
+               BuildableName = "CITI Tour .app"
                BlueprintName = "CameraKitHelloWorld"
                ReferencedContainer = "container:CameraKitHelloWorld.xcodeproj">
             </BuildableReference>
@@ -34,7 +34,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "022C40FE17AE279C00385168"
-            BuildableName = "CameraKitHelloWorld.app"
+            BuildableName = "CITI Tour .app"
             BlueprintName = "CameraKitHelloWorld"
             ReferencedContainer = "container:CameraKitHelloWorld.xcodeproj">
          </BuildableReference>
@@ -58,7 +58,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "022C40FE17AE279C00385168"
-            BuildableName = "CameraKitHelloWorld.app"
+            BuildableName = "CITI Tour .app"
             BlueprintName = "CameraKitHelloWorld"
             ReferencedContainer = "container:CameraKitHelloWorld.xcodeproj">
          </BuildableReference>
@@ -77,7 +77,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "022C40FE17AE279C00385168"
-            BuildableName = "CameraKitHelloWorld.app"
+            BuildableName = "CITI Tour .app"
             BlueprintName = "CameraKitHelloWorld"
             ReferencedContainer = "container:CameraKitHelloWorld.xcodeproj">
          </BuildableReference>

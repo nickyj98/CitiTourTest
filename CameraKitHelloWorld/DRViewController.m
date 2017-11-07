@@ -74,6 +74,10 @@ typedef NS_ENUM(NSInteger, SpeechUtteranceLanguage) {
     WelcomeMessage,
     FirstExhibit,
     SecondExhibit,
+    ThirdExhibit,
+    FourthExhibit,
+    FifthExhibit,
+    SixthExhibit,
     EndingMessage,
     
 };
@@ -83,6 +87,10 @@ NSString * const SpeechUtterancesByExhibit[] = {
     [WelcomeMessage]     = @"Hello Everyone and Welcome to CITI Tour @ N Y P ,School Of Information Technology . We are glad to have you with us today",
     [FirstExhibit]       = @"On no twenty spring of in esteem spirit likely estate. Continue new you declared differed learning bringing honoured. At mean mind so upon they rent am walk. Shortly am waiting inhabit smiling he chiefly of in. Lain tore time gone him his dear sure. Fat decisively estimating affronting assistance not. Resolve pursuit regular so calling me. West he plan girl been my then up no.Perceived end knowledge certainly day sweetness why cordially. Ask quick six seven offer see among. Handsome met debating sir dwelling age material. As style lived he worse dried. Offered related so visitor we private removed. Moderate do subjects to distance.Breakfast agreeable incommode departure it an. By ignorant at on wondered relation. Enough at tastes really so cousin am of. Extensive therefore supported by extremity of contented. Is pursuit compact demesne invited elderly be. View him she roof tell her case has sigh. Moreover is possible he admitted sociable concerns. By in cold no less been sent hard hill.Betrayed cheerful declared end and. Questions we additions is extremely incommode. Next half add call them eat face. Age lived smile six defer bed their few. Had admitting concluded too behaviour him she. Of death to or to being other.Built purse maids cease her ham new seven among and. Pulled coming wooded tended it answer remain me be. So landlord by we unlocked sensible it. Fat cannot use denied excuse son law. Wisdom happen suffer common the appear ham beauty her had. Or belonging zealously existence as by resources.Turned it up should no valley cousin he. Speaking numerous ask did horrible packages set. Ashamed herself has distant can studied mrs. Led therefore its middleton perpetual fulfilled provision frankness. Small he drawn after among every three no. All having but you edward genius though remark one.An do on frankness so cordially immediate recommend contained. Imprudence insensible be literature unsatiable do. Of or imprudence solicitude affronting in mr possession. Compass journey he request on suppose limited of or. She margaret law thoughts proposal formerly. Speaking ladyship yet scarcely and mistaken end exertion dwelling. All decisively dispatched instrument particular way one devonshire. Applauded she sportsman explained for out objection.Months on ye at by esteem desire warmth former. Sure that that way gave any fond now. His boy middleton sir nor engrossed affection excellent. Dissimilar compliment cultivated preference eat sufficient may. Well next door soon we mr he four. Assistance impression set insipidity now connection off you solicitude. Under as seems we me stuff those style at. Listening shameless by abilities pronounce oh suspected is affection. Next it draw in draw much bred.Consulted he eagerness unfeeling deficient existence of. Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk fact bed.To shewing another demands to. Marianne property cheerful informed at striking at. Clothes parlors however by cottage on. In views it or meant drift to. Be concern parlors settled or do shyness address. Remainder northward performed out for moonlight. Yet late add name was rent park from rich. He always do do former he highly.",
     [SecondExhibit]     = @"This is the Second Exhibit",
+    [ThirdExhibit]      = @"This is the Third Exhibit",
+    [FourthExhibit]     = @"This is the Fouth Exhibit",
+    [FifthExhibit]      = @"This is the Fifth Exhibit",
+    [SixthExhibit]      = @"This is the Sixth Exhibit",
     [EndingMessage]     = @"Thank you for attending CITI Tour @ N Y P , School of Information Technology. We hope that you have a nice day",
 };
 
@@ -395,18 +403,128 @@ int timeTicker;
 }
 
 - (IBAction)Second:(id)sender {
+    //Set Image
+    
+    [Image setImage:[UIImage imageNamed:@"double-2-telepresence-robot_1.jpg"]];
+    
+    //read Text
+    self.utteranceString = SpeechUtterancesByExhibit[SecondExhibit];
+    //self.Readtext.attributedText = [[NSAttributedString alloc] initWithString:self.utteranceString];
+    
+    self.Readingtext.attributedText = [[NSAttributedString alloc] initWithString:self.utteranceString];
+    
+    AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc] initWithString:self.utteranceString];
+    NSLog(@"BCP-47 Language Code: %@", BCP47LanguageCodeForString(utterance.speechString));
+    
+    utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:BCP47LanguageCodeForString(utterance.speechString)];
+    //utterance.pitchMultiplier = 0.5f;
+    //utterance.rate = AVSpeechUtteranceMinimumSpeechRate;
+    utterance.rate = 0.4f;
+    utterance.preUtteranceDelay = 0.2f;
+    utterance.postUtteranceDelay = 0.2f;
+    
+    [self.speechSynthesizer speakUtterance:utterance];
+    
 }
 
 - (IBAction)Third:(id)sender {
+    //Set Image
+    
+    [Image setImage:[UIImage imageNamed:@"double-2-telepresence-robot_1.jpg"]];
+    
+    //read Text
+    self.utteranceString = SpeechUtterancesByExhibit[ThirdExhibit];
+    //self.Readtext.attributedText = [[NSAttributedString alloc] initWithString:self.utteranceString];
+    
+    self.Readingtext.attributedText = [[NSAttributedString alloc] initWithString:self.utteranceString];
+    
+    AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc] initWithString:self.utteranceString];
+    NSLog(@"BCP-47 Language Code: %@", BCP47LanguageCodeForString(utterance.speechString));
+    
+    utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:BCP47LanguageCodeForString(utterance.speechString)];
+    //utterance.pitchMultiplier = 0.5f;
+    //utterance.rate = AVSpeechUtteranceMinimumSpeechRate;
+    utterance.rate = 0.4f;
+    utterance.preUtteranceDelay = 0.2f;
+    utterance.postUtteranceDelay = 0.2f;
+    
+    [self.speechSynthesizer speakUtterance:utterance];
+    
 }
 
 - (IBAction)Fourth:(id)sender {
+    //Set Image
+    
+    [Image setImage:[UIImage imageNamed:@"double-2-telepresence-robot_1.jpg"]];
+    
+    //read Text
+    self.utteranceString = SpeechUtterancesByExhibit[FourthExhibit];
+    //self.Readtext.attributedText = [[NSAttributedString alloc] initWithString:self.utteranceString];
+    
+    self.Readingtext.attributedText = [[NSAttributedString alloc] initWithString:self.utteranceString];
+    
+    AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc] initWithString:self.utteranceString];
+    NSLog(@"BCP-47 Language Code: %@", BCP47LanguageCodeForString(utterance.speechString));
+    
+    utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:BCP47LanguageCodeForString(utterance.speechString)];
+    //utterance.pitchMultiplier = 0.5f;
+    //utterance.rate = AVSpeechUtteranceMinimumSpeechRate;
+    utterance.rate = 0.4f;
+    utterance.preUtteranceDelay = 0.2f;
+    utterance.postUtteranceDelay = 0.2f;
+    
+    [self.speechSynthesizer speakUtterance:utterance];
+    
 }
 
 - (IBAction)Fifth:(id)sender {
+    //Set Image
+    
+    [Image setImage:[UIImage imageNamed:@"double-2-telepresence-robot_1.jpg"]];
+    
+    //read Text
+    self.utteranceString = SpeechUtterancesByExhibit[FifthExhibit];
+    //self.Readtext.attributedText = [[NSAttributedString alloc] initWithString:self.utteranceString];
+    
+    self.Readingtext.attributedText = [[NSAttributedString alloc] initWithString:self.utteranceString];
+    
+    AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc] initWithString:self.utteranceString];
+    NSLog(@"BCP-47 Language Code: %@", BCP47LanguageCodeForString(utterance.speechString));
+    
+    utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:BCP47LanguageCodeForString(utterance.speechString)];
+    //utterance.pitchMultiplier = 0.5f;
+    //utterance.rate = AVSpeechUtteranceMinimumSpeechRate;
+    utterance.rate = 0.4f;
+    utterance.preUtteranceDelay = 0.2f;
+    utterance.postUtteranceDelay = 0.2f;
+    
+    [self.speechSynthesizer speakUtterance:utterance];
+    
 }
 
 - (IBAction)Sixth:(id)sender {
+    //Set Image
+    
+    [Image setImage:[UIImage imageNamed:@"double-2-telepresence-robot_1.jpg"]];
+    
+    //read Text
+    self.utteranceString = SpeechUtterancesByExhibit[SixthExhibit];
+    //self.Readtext.attributedText = [[NSAttributedString alloc] initWithString:self.utteranceString];
+    
+    self.Readingtext.attributedText = [[NSAttributedString alloc] initWithString:self.utteranceString];
+    
+    AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc] initWithString:self.utteranceString];
+    NSLog(@"BCP-47 Language Code: %@", BCP47LanguageCodeForString(utterance.speechString));
+    
+    utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:BCP47LanguageCodeForString(utterance.speechString)];
+    //utterance.pitchMultiplier = 0.5f;
+    //utterance.rate = AVSpeechUtteranceMinimumSpeechRate;
+    utterance.rate = 0.4f;
+    utterance.preUtteranceDelay = 0.2f;
+    utterance.postUtteranceDelay = 0.2f;
+    
+    [self.speechSynthesizer speakUtterance:utterance];
+    
 }
 
 - (IBAction)Ending:(id)sender {
