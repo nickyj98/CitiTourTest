@@ -24,6 +24,8 @@
 		3B184F321F85D99B002C5204 /* centre-for-it-innovation-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B184F301F85D99A002C5204 /* centre-for-it-innovation-logo.jpg */; };
 		3B184F341F85D9A2002C5204 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3B184F331F85D9A2002C5204 /* images.jpeg */; };
 		3B1A02F91F79E03100390B0D /* DoubleControlSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A02F71F79E03100390B0D /* DoubleControlSDK.framework */; };
+		3BF2F4FF1FB19D0900D2BCEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BF2F4FE1FB19D0900D2BCEB /* GoogleService-Info.plist */; };
+		A9F8C87CF9C29BDBB5243105 /* libPods-CameraKitHelloWorld.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 717A8C9EFAF54AEC93C52CA3 /* libPods-CameraKitHelloWorld.a */; };
 		F446A3E21F3D7E4D00A56682 /* notconnected.png in Resources */ = {isa = PBXBuildFile; fileRef = F446A3E11F3D7E4D00A56682 /* notconnected.png */; };
 		F446A3E41F3D845B00A56682 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F446A3E31F3D845B00A56682 /* QuartzCore.framework */; };
 		F4703BAF1F41645F00A64D49 /* UIPopover+iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = F4703BAE1F41645F00A64D49 /* UIPopover+iPhone.m */; };
@@ -55,6 +57,8 @@
 		0249A9521D5C5C4800974BD2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = CameraKitHelloWorld/Default.png; sourceTree = SOURCE_ROOT; };
 		0249A9531D5C5C4800974BD2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "CameraKitHelloWorld/Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		0249A9541D5C5C4800974BD2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CameraKitHelloWorld/main.m; sourceTree = SOURCE_ROOT; };
+		0AAE19627F89E87DF78896AE /* Pods-CameraKitHelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraKitHelloWorld.release.xcconfig"; path = "Pods/Target Support Files/Pods-CameraKitHelloWorld/Pods-CameraKitHelloWorld.release.xcconfig"; sourceTree = "<group>"; };
+		1CA0A2FEC468B194004FEE1B /* Pods-CameraKitHelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraKitHelloWorld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CameraKitHelloWorld/Pods-CameraKitHelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
 		3B184F271F84DEC0002C5204 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = main.storyboard; path = "/Users/rts/Desktop/CITITour/Video Recording(final P1) copy-2/Video Recording/CameraKitHelloWorld/main.storyboard"; sourceTree = "<absolute>"; };
 		3B184F291F85C9CA002C5204 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3B184F2F1F85D99A002C5204 /* double-2-telepresence-robot_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "double-2-telepresence-robot_1.jpg"; sourceTree = SOURCE_ROOT; };
@@ -62,6 +66,8 @@
 		3B184F331F85D9A2002C5204 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = SOURCE_ROOT; };
 		3B1A02F71F79E03100390B0D /* DoubleControlSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DoubleControlSDK.framework; sourceTree = "<group>"; };
 		3B1A02FA1F79E7E000390B0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = Info.plist; path = DoubleControlSDK.framework/Info.plist; sourceTree = "<group>"; };
+		3BF2F4FE1FB19D0900D2BCEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		717A8C9EFAF54AEC93C52CA3 /* libPods-CameraKitHelloWorld.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CameraKitHelloWorld.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F446A3E11F3D7E4D00A56682 /* notconnected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notconnected.png; sourceTree = SOURCE_ROOT; };
 		F446A3E31F3D845B00A56682 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F4703BAD1F41645F00A64D49 /* UIPopover+iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPopover+iPhone.h"; sourceTree = SOURCE_ROOT; };
@@ -89,6 +95,7 @@
 				022C410317AE279C00385168 /* UIKit.framework in Frameworks */,
 				022C410517AE279C00385168 /* Foundation.framework in Frameworks */,
 				022C410717AE279C00385168 /* CoreGraphics.framework in Frameworks */,
+				A9F8C87CF9C29BDBB5243105 /* libPods-CameraKitHelloWorld.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +109,7 @@
 				022C410817AE279C00385168 /* CameraKitHelloWorld */,
 				022C410017AE279C00385168 /* Products */,
 				022C410117AE279C00385168 /* Frameworks */,
+				64FE77AFC8D39FBCB03223D1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +131,7 @@
 				022C410217AE279C00385168 /* UIKit.framework */,
 				022C410417AE279C00385168 /* Foundation.framework */,
 				022C410617AE279C00385168 /* CoreGraphics.framework */,
+				717A8C9EFAF54AEC93C52CA3 /* libPods-CameraKitHelloWorld.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,6 +139,7 @@
 		022C410817AE279C00385168 /* CameraKitHelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				3BF2F4FE1FB19D0900D2BCEB /* GoogleService-Info.plist */,
 				3B184F271F84DEC0002C5204 /* main.storyboard */,
 				0249A9431D5C5C0E00974BD2 /* DRAppDelegate.h */,
 				0249A9441D5C5C0E00974BD2 /* DRAppDelegate.m */,
@@ -170,6 +180,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		64FE77AFC8D39FBCB03223D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CA0A2FEC468B194004FEE1B /* Pods-CameraKitHelloWorld.debug.xcconfig */,
+				0AAE19627F89E87DF78896AE /* Pods-CameraKitHelloWorld.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,9 +196,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 022C412217AE279C00385168 /* Build configuration list for PBXNativeTarget "CameraKitHelloWorld" */;
 			buildPhases = (
+				0EF2B989B79D78121A44A8AC /* [CP] Check Pods Manifest.lock */,
 				022C40FB17AE279C00385168 /* Sources */,
 				022C40FC17AE279C00385168 /* Frameworks */,
 				022C40FD17AE279C00385168 /* Resources */,
+				8EDE44FE3432F225467D00DF /* [CP] Embed Pods Frameworks */,
+				A7461139EA3608015DCC61D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,7 +219,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = DR;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Double Robotics, Inc.";
 				TargetAttributes = {
 					022C40FE17AE279C00385168 = {
@@ -239,6 +261,7 @@
 				F4D504E11EFBC8FD0008483D /* weather.gif in Resources */,
 				0249A9561D5C5C4800974BD2 /* Default-568h@2x.png in Resources */,
 				0249A94E1D5C5C2C00974BD2 /* InfoPlist.strings in Resources */,
+				3BF2F4FF1FB19D0900D2BCEB /* GoogleService-Info.plist in Resources */,
 				3B184F341F85D9A2002C5204 /* images.jpeg in Resources */,
 				3B184F311F85D99B002C5204 /* double-2-telepresence-robot_1.jpg in Resources */,
 				F48086671F398DC700CAE162 /* hamster.jpg in Resources */,
@@ -250,6 +273,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EF2B989B79D78121A44A8AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CameraKitHelloWorld-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EDE44FE3432F225467D00DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CameraKitHelloWorld/Pods-CameraKitHelloWorld-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7461139EA3608015DCC61D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CameraKitHelloWorld/Pods-CameraKitHelloWorld-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		022C40FB17AE279C00385168 /* Sources */ = {
@@ -284,12 +358,18 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -328,12 +408,18 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -360,8 +446,10 @@
 		};
 		022C412317AE279C00385168 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CA0A2FEC468B194004FEE1B /* Pods-CameraKitHelloWorld.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = A63BC52AW3;
@@ -383,8 +471,10 @@
 		};
 		022C412417AE279C00385168 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AAE19627F89E87DF78896AE /* Pods-CameraKitHelloWorld.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = A63BC52AW3;

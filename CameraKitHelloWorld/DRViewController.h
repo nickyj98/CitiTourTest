@@ -22,6 +22,8 @@
     IBOutlet UILabel *kickstandStateLabel;
     IBOutlet UILabel *batteryPercentLabel;
     
+    IBOutlet UILabel *ControlsForwardBackward;
+    IBOutlet UILabel *ControlsLeftRight;
     
     //Label for Records
     
@@ -34,6 +36,8 @@
     IBOutlet UIButton *driveRightButton;
     IBOutlet UIButton *driveBackwardButton;
     
+    IBOutlet UIButton *Park;
+    IBOutlet UIButton *Deploy;
     
     IBOutlet UIImageView *image;
     

@@ -7,8 +7,8 @@
 //
 
 #import "DRAppDelegate.h"
-
 #import "DRViewController.h"
+@import Firebase;
 
 @implementation DRAppDelegate
 
@@ -22,6 +22,8 @@
 	self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
      */
+    [FIRApp configure];
+    
     return YES;
      
      

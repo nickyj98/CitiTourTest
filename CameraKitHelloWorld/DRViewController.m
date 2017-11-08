@@ -9,7 +9,7 @@
 #import "DRViewController.h"
 #import <DoubleControlSDK/DoubleControlSDK.h>
 #import <AVFoundation/AVFoundation.h>
-
+@import Firebase;
 
 
 static NSString * BCP47LanguageCodeFromISO681LanguageCode(NSString *ISO681LanguageCode) {
@@ -112,6 +112,10 @@ UIImageView *TourImage;
 @property (readwrite, nonatomic, strong) AVSpeechSynthesizer *speechSynthesizer;
 
 
+@property (strong, nonatomic) FIRDatabaseReference *ref;
+//firebase stuff
+
+
 @end
 int timeTicker;
 
@@ -127,6 +131,45 @@ int timeTicker;
     self.speechSynthesizer = [[AVSpeechSynthesizer alloc] init];
     self.speechSynthesizer.delegate = self;
 	
+    self.ref = [[FIRDatabase database] reference];
+    
+    //get front back
+    [[self.ref child:@"Controls/direction1"]observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+        NSDictionary *direction1 = snapshot.value;
+        NSLog(@"Info : %@",direction1);
+        
+        NSString * Direction1 = [NSString stringWithFormat:@"%@",direction1];
+        NSLog(@"String : %@",Direction1);
+        ControlsForwardBackward.text = Direction1;
+        
+    }];
+    
+    //get left right
+    [[self.ref child:@"Controls/direction2"]observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+        NSDictionary *direction2 = snapshot.value;
+        NSLog(@"Info : %@",direction2);
+       
+        NSString * Direction2 = [NSString stringWithFormat:@"%@",direction2];
+        NSLog(@"String : %@",Direction2);
+        
+        ControlsLeftRight.text = Direction2;
+    }];
+    
+    //get parking status
+    [[self.ref child:@"Controls/ParkingStatus"]observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+        NSDictionary *parkingStatus = snapshot.value;
+        NSLog(@"Info : %@",parkingStatus);
+        
+        NSString * ParkingStatus = [NSString stringWithFormat:@"%@",parkingStatus];
+        NSLog(@"ParkingString : %@",ParkingStatus);
+        
+        if([ParkingStatus isEqualToString:@"Deploy"]){
+            [[DRDouble sharedDouble] retractKickstands];
+        }else if([ParkingStatus isEqualToString:@"Park"]){
+            [[DRDouble sharedDouble] deployKickstands];
+        }
+    }];
+    
     
 }
 
@@ -184,6 +227,8 @@ int timeTicker;
     connectionStatusLabel.text = @"Not Connected";
 }
 
+
+
 -(void)doubleStatusDidUpdate:(DRDouble *)theDouble{
     NSLog(@"DoubleStatusDidUpdate");
     poleHeightPercentLabel.text = [NSString stringWithFormat:@"%.02f", [DRDouble sharedDouble].poleHeightPercent];
@@ -209,17 +254,49 @@ int timeTicker;
 
 
 - (void)doubleDriveShouldUpdate:(DRDouble *)theDouble {
+    NSString * frontBack;
+    NSString * LeftRight;
     
     
-   
-        NSLog(@"DoubleDriveShouldUpdate");
+    if([ControlsForwardBackward.text isEqualToString: @"Forward"]){
+        frontBack = @"Forward";
+    }
+    if([ControlsForwardBackward.text isEqualToString: @"Backward"]){
+        frontBack = @"Backward";
+    }
+    if([ControlsForwardBackward.text isEqualToString: @"-"]){
+        frontBack = @"-";
+    }
+    
+    if([ControlsLeftRight.text isEqualToString: @"Left"]){
+        LeftRight = @"Left";
+    }
+    if([ControlsLeftRight.text isEqualToString: @"Right"]){
+        LeftRight = @"Right";
+    }
+    if([ControlsLeftRight.text isEqualToString: @"-"]){
+        LeftRight = @"-";
+    }
+   //manual drive
+        NSLog(@"DoubleDriveShouldUpdateManual");
         float drive = (DriveFrontButton.highlighted) ? kDRDriveDirectionForward : ((driveBackwardButton.highlighted) ? kDRDriveDirectionBackward : kDRDriveDirectionStop);
         NSLog(@"drive : %f", drive);
         
         
         float turn = (driveRightButton.highlighted) ? 1.0 : ((driveLeftButton.highlighted) ? 	-1.0 : 0.0);
         NSLog(@"Turn : %f", turn);
-        [theDouble drive:drive turn:turn];
+        //[theDouble drive:drive turn:turn];
+    
+    //Remote drive
+    NSLog(@"DoubleDriveShouldUpdateRemote");
+    float Rdrive = ([frontBack isEqualToString:@"Forward"]) ? kDRDriveDirectionForward : (([frontBack isEqualToString:@"Backward"]) ? kDRDriveDirectionBackward : kDRDriveDirectionStop);
+    NSLog(@"Rdrive : %f", Rdrive);
+    
+    
+    float Rturn = ([LeftRight isEqualToString:@"Left"]) ? 1.0 : (([LeftRight isEqualToString:@"Right"]) ?     -1.0 : 0.0);
+    NSLog(@"RTurn : %f", Rturn);
+    [theDouble drive:drive + Rdrive turn:turn + Rturn];
+    
     
     if(_manualcontrols.highlighted == true){
         
@@ -333,15 +410,8 @@ int timeTicker;
 
 - (IBAction)DemoButton:(id)sender
 {
-    double totalDelay3 =0;
     
     //test
-    double delayinSeconds4 =1;
-    double totalDelay4 = totalDelay3 + delayinSeconds4;
-    
-    
-    double delayinSeconds5 =1;
-    double totalDelay5 = totalDelay4 + delayinSeconds5;
     
 }
 
